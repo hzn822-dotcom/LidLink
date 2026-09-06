@@ -1,4 +1,6 @@
 #!/bin/zsh
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 hzn822-dotcom and LidLink contributors
 
 set -euo pipefail
 
@@ -21,12 +23,14 @@ contents="$app_dir/Contents"
 
 /bin/cp "$project_dir/Resources/lidlink-helper.sh" "$contents/Resources/lidlink-helper.sh"
 /bin/cp "$project_dir/Resources/com.codex.lidlink.plist" "$contents/Resources/com.codex.lidlink.plist"
+/bin/cp "$project_dir/Resources/AppIcon.icns" "$contents/Resources/AppIcon.icns"
 
 /usr/bin/plutil -create xml1 "$contents/Info.plist"
 /usr/bin/plutil -insert CFBundleName -string "盒盖在线" "$contents/Info.plist"
 /usr/bin/plutil -insert CFBundleDisplayName -string "盒盖在线" "$contents/Info.plist"
 /usr/bin/plutil -insert CFBundleIdentifier -string "com.codex.lidlink" "$contents/Info.plist"
 /usr/bin/plutil -insert CFBundleExecutable -string "LidLink" "$contents/Info.plist"
+/usr/bin/plutil -insert CFBundleIconFile -string "AppIcon" "$contents/Info.plist"
 /usr/bin/plutil -insert CFBundlePackageType -string "APPL" "$contents/Info.plist"
 /usr/bin/plutil -insert CFBundleShortVersionString -string "1.0.2" "$contents/Info.plist"
 /usr/bin/plutil -insert CFBundleVersion -string "3" "$contents/Info.plist"

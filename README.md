@@ -1,5 +1,9 @@
 # LidLink · 盒盖在线
 
+<p align="center">
+  <img src="Assets/LidLinkIcon.png" width="180" alt="LidLink app icon">
+</p>
+
 让接通电源的 MacBook 在合盖、关闭内屏后继续运行 Codex、Claude Code、SSH、下载和其他后台任务。
 
 > 非 Apple 或 OpenAI 官方项目。本工具会修改 macOS 的系统睡眠策略，请先阅读安全说明。
@@ -84,7 +88,9 @@ chmod +x build.sh
 
 ## License
 
-[MIT](LICENSE)
+[GNU General Public License v3.0 only](LICENSE) (`GPL-3.0-only`).
+
+从本次换证提交开始，修改和再分发版本必须继续采用 GPLv3 并提供对应源码。更早已经按 MIT 发布的提交仍保留其原授权。
 
 ---
 

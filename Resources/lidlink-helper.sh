@@ -1,4 +1,6 @@
 #!/bin/zsh
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 hzn822-dotcom and LidLink contributors
 
 set -u
 
